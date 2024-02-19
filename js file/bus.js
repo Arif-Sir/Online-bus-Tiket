@@ -99,3 +99,14 @@ const cupponBtn=document.getElementById('coupon-apply-btn');
             }
 
         })
+// -----modal
+const nextBtn=document.getElementById('next-btn');
+const congrates=document.getElementById('congrates');
+nextBtn.addEventListener('click',function(){
+    congrates.classList.remove('hidden');
+    congrates.scrollIntoView();
+})
+// ------------------------------------------Continue
+document.getElementById('continue').addEventListener('click',function(){
+    document.getElementById('congrates').classList.add('hidden');
+})
